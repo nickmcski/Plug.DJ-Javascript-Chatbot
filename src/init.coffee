@@ -10,8 +10,6 @@ populateUserData = ->
 
 initEnvironment = ->
 	document.getElementById("button-vote-positive").click()
-	document.getElementById("button-sound").click()
-	Playback.streamDisabled = true
 	Playback.stop()
 
 initialize = ->
