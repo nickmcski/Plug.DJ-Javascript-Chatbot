@@ -5,5 +5,5 @@ class sourceCommand extends Command
 		@rankPrivelege='user'
 
 	functionality: ->
-		msg = 'Backus wrote me in CoffeeScript.  A generalized version of me should be available on github soon!'
+		msg = 'Nicholas McCurry modified me'
 		API.sendChat msg
