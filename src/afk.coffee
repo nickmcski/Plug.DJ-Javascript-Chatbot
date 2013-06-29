@@ -28,7 +28,6 @@ afkCheck = ->
             if DJs.length > 0 and DJs[0].id != user.getUser().id
               API.sendChat "@"+user.getUser().username+", you had 2 warnings. Please stay active by chatting or voting."
               API.moderateRemoveDJ id
-              user.warn()
       else
         user.notDj()
 
