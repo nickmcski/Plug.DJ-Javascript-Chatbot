@@ -9,6 +9,7 @@ afkCheck = ->
         if user.getWarningCount() == 0
           user.warn()
           API.sendChat "@"+user.getUser().username+", I haven't seen you chat or vote in at least 12 minutes. Are you AFK?  If you don't show activity in 2 minutes I will remove you."
+          API.sendChat "@"+user.getUser().username+"Debuging time since"+timeSinceLastActivity+"secs last active"+secsLastActive
         else if user.getWarningCount() == 1
           lastWarned = user.getLastWarning()#last time user was warned
           timeSinceLastWarning = now.getTime() - lastWarned.getTime()
