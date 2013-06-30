@@ -8,16 +8,15 @@ afkCheck = ->
         secsLastActive = timeSinceLastActivity / 1000
         if user.getWarningCount() == 0
           user.warn()
-          API.sendChat "@"+user.getUser().username+", I haven't seen you chat or vote in at least 12 minutes. Are you AFK?  If you don't show activity in 2 minutes I will remove you."
-          API.sendChat "@"+user.getUser().username+"Debuging time since"+timeSinceLastActivity+"secs last active"+secsLastActive
+          API.sendChat "@"+user.getUser().username+", I haven't seen you chat or vote in at least 2 hours. Are you AFK?  If you don't show activity in 5 minutes I will remove you."
         else if user.getWarningCount() == 1
           lastWarned = user.getLastWarning()#last time user was warned
           timeSinceLastWarning = now.getTime() - lastWarned.getTime()
-          twoMinutes = 2*60*1000
+          twoMinutes = 5*60*1000
           if timeSinceLastWarning > twoMinutes
             user.warn()
             warnMsg = "@"+user.getUser().username
-            warnMsg += ", I haven't seen you chat or vote in at least 14 minutes now.  This is your second and FINAL warning.  If you do not chat or vote in the next minute I will remove you."
+            warnMsg += ", I haven't seen you chat or vote in at least 2 hours now.  This is your second and FINAL warning.  If you do not chat or vote in the next minute I will remove you."
             API.sendChat warnMsg
         else if user.getWarningCount() == 2#Time to remove
           lastWarned = user.getLastWarning()#last time user was warned
