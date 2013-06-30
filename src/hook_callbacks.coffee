@@ -13,7 +13,7 @@ handleUserJoin = (user) ->
     
     if8
 
-fanJoin = (user) ->
+friendJoin = (user) ->
     API.sendChat "/em: " + user.username + " an awesome DJ just joined the room!"
     
 handleNewSong = (obj) ->
