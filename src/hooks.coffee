@@ -11,7 +11,8 @@ apiHooks = [
     {'event':API.DJ_ADVANCE, 'callback':handleNewSong},
     {'event':API.VOTE_UPDATE, 'callback':handleVote},
     {'event':API.CHAT, 'callback':chatCommandDispatcher},
-    {'event':API.USER_LEAVE, 'callback':handleUserLeave}
+    {'event':API.USER_LEAVE, 'callback':handleUserLeave},
+    {'event':API.FAN_JOIN, 'callback':fanJoin}
 ]
 
 initHooks = ->

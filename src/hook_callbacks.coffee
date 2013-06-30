@@ -10,7 +10,12 @@ announceCurate = (obj) ->
 handleUserJoin = (user) ->
     data.userJoin(user)
     data.users[user.id].updateActivity()
+    
+    if8
 
+fanJoin =    (user)
+        API.sendChat "/em: " + user.username + " an awesome DJ just joined the room!"
+    
 handleNewSong = (obj) ->
     data.intervalMessages()
     if(data.currentsong == null)
