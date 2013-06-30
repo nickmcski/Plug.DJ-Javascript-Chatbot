@@ -13,8 +13,8 @@ handleUserJoin = (user) ->
     
     if8
 
-fanJoin =    (user)
-        API.sendChat "/em: " + user.username + " an awesome DJ just joined the room!"
+fanJoin = (user) ->
+    API.sendChat "/em: " + user.username + " an awesome DJ just joined the room!"
     
 handleNewSong = (obj) ->
     data.intervalMessages()
