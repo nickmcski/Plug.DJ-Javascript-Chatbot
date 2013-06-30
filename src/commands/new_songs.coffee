@@ -2,7 +2,7 @@ class newSongsCommand extends Command
 	init: ->
 		@command='/newsongs'
 		@parseType='startsWith'
-		@rankPrivelege='user'
+		@rankPrivelege='host'
 
 	functionality: ->
 		mChans = @memberChannels.slice(0)
@@ -38,7 +38,6 @@ class newSongsCommand extends Command
 		" http://youtube.com/" + selections['channels'][1] + 
 		" or http://youtube.com/" + selections['channels'][2];
 
-		API.sendChat(msg)
 
 	# memChanLen = memberChannels.length
  #      chanLen = channels.length
