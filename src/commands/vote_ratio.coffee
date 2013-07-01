@@ -2,7 +2,7 @@ class voteRatioCommand extends Command
 	init: ->
 		@command='/voteratio'
 		@parseType='startsWith'
-		@rankPrivelege='mod'
+		@rankPrivelege='user'
 
 	functionality: ->
 		r = new RoomHelper()
