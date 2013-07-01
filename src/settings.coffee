@@ -8,7 +8,7 @@ class settings
 	currentwoots: 0
 	currentmehs: 0
 	currentcurates: 0
-	roomUrlPath: null#for lock. 'dubstep-den' in 'http://plug.dj/dubstep-den/'
+	roomUrlPath: null#for lock. 'craftland-weekly' in 'http://plug.dj/craftland-weekly/'
 	internalWaitlist: []
 	userDisconnectLog: []
 	voteLog: {}
