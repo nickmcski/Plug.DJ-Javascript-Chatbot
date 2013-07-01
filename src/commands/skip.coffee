@@ -5,5 +5,6 @@ class skipCommand extends Command
 		@rankPrivelege='mod'
 
 	functionality: ->
+        API.sendChat("Skipping")
 		API.moderateForceSkip()
 		

@@ -9,6 +9,7 @@ class swapCommand extends Command
 		swapRegex = new RegExp("^/swap @(.+) for @(.+)$")
 		users = swapRegex.exec(msg).slice(1)
 		r = new RoomHelper()
+        API.sendChat("Swaping")
 		if users.length == 2
 			userRemove = r.lookupUser users[0]
 			userAdd = r.lookupUser users[1]
