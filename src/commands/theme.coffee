@@ -5,6 +5,5 @@ class themeCommand extends Command
 		@rankPrivelege='user'
 
 	functionality: ->
-		msg = "Any type of Bass Music is allowed here. Including Dubstep, Complextro, Drum and Bass, "
-		msg += "Garage, Breakbeat, Hardstyle, Moombahton, HEAVY EDM, House, Electro, and Trance!!"
+		msg = "Almost any music is allowed here"
 		API.sendChat(msg)
