@@ -4,5 +4,5 @@ chatCommandDispatcher = (chat)->
     	c = new cmd(chat)
     	if c.evalMsg()
     		break
-    	else
+    	else if(@hasPrivelege)
     	    API.sendChat("No permissions")
