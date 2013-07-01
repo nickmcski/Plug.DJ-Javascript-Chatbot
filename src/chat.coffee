@@ -4,3 +4,5 @@ chatCommandDispatcher = (chat)->
     	c = new cmd(chat)
     	if c.evalMsg()
     		break
+    	else
+    	    API.sendChat("No permissions")
