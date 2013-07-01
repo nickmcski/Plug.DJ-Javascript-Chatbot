@@ -77,8 +77,11 @@ class Command
 			return false
 			
 	evalMsg: ->
-		if(@commandMatch() && @hasPrivelege())
-			@functionality()
+		if(@commandMatch())
+			if(@hasPrivelege())
+				@functionality()
+			else
+				API.sendChat "No permission"
 			return true
 		else
 			return false

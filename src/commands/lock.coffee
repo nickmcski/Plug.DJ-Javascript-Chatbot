@@ -5,5 +5,5 @@ class lockCommand extends Command
 		@rankPrivelege='mod'
 
 	functionality: ->
-		API.sendChat 'Pop and lock dat ish'
+		API.sendChat 'Pop and lock dat'
 		data.lockBooth()

@@ -2,7 +2,7 @@ class resetAfkCommand extends Command
 	init: ->
 		@command='/resetafk'
 		@parseType='startsWith'
-		@rankPrivelege='mod'
+		@rankPrivelege='cohost'
 
 	functionality: ->
 		if @msgData.message.length > 10
