@@ -6,4 +6,4 @@ class overplayedCommand extends Command
 
 	functionality: ->
 		API.sendChat "Please dont overplay songs"
-        API.getDJs().slice(1)
+		API.getDJs().slice(1)
