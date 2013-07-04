@@ -10,8 +10,6 @@ announceCurate = (obj) ->
 handleUserJoin = (user) ->
     data.userJoin(user)
     data.users[user.id].updateActivity()
-    
-    if8
 
 friendJoin = (user) ->
     API.sendChat "/em: " + user.username + " an awesome DJ just joined the room!"
@@ -25,6 +23,7 @@ handleNewSong = (obj) ->
         data.newSong()
         document.getElementById("button-vote-positive").click()
     if data.forceSkip # skip songs when song is over
+        console.log "Force skiping song"
         songId = obj.media.id
         setTimeout ->
             cMedia = API.getMedia()
