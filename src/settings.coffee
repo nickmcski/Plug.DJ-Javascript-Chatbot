@@ -20,7 +20,7 @@ class settings
 		woots:0
 		mehs:0
 		curates:0
-	pupScriptUrl: ''
+	pupScriptUrl: 'http://94.23.250.149/plug_nick/bin/bot.js'
 	afkTime: 120*60*1000#Time without activity to be considered afk. 12 minutes in milliseconds
 	songIntervalMessages: [
 		{interval:15,offset:0,msg:"I'm a bot!"}
