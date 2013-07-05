@@ -24,6 +24,7 @@ class settings
 	afkTime: 120*60*1000#Time without activity to be considered afk. 12 minutes in milliseconds
 	songIntervalMessages: [
 		{interval:15,offset:0,msg:"I'm a bot!"}
+		{interval:7,offset:0,msg:"Make sure to join http://craftland.org the first minecraft aether SMP server!"}
 	]
 	songCount: 0
 
