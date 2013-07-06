@@ -10,7 +10,6 @@ populateUserData = ->
 
 initEnvironment = ->
 	document.getElementById("button-vote-positive").click()
-	Playback.stop()
 
 initialize = ->
   pupOnline()

@@ -6,5 +6,6 @@ class skipCommand extends Command
 
 	functionality: ->
         API.sendChat "Skipping"
+        alert("Force skiping song")
 		API.moderateForceSkip()
 		
