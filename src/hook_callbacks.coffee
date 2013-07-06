@@ -23,11 +23,12 @@ handleNewSong = (obj) ->
         data.newSong()
         document.getElementById("button-vote-positive").click()
     if data.forceSkip # skip songs when song is over
-        console.log "Force skiping song"
+        alert("Force skiping song")
         songId = obj.media.id
         setTimeout ->
             cMedia = API.getMedia()
             if cMedia.id == songId
+                API.sendChat "ForceSkipping"
                 API.moderateForceSkip()
         ,(obj.media.duration * 1000)
 
