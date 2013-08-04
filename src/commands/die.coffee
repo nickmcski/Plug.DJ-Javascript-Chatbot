@@ -2,7 +2,7 @@ class dieCommand extends Command
 	init: ->
 		@command='!die'
 		@parseType='exact'
-		@rankPrivelege='cohost'
+		@rankPrivelege='host'
 
 	functionality: ->
 		API.sendChat 'Unhooking Events...'

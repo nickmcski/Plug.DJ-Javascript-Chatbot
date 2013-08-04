@@ -8,7 +8,7 @@ class commandsCommand extends Command
 		allowedUserLevels = []
 		user = API.getUser(@msgData.fromID)
 		if user.owner
-			allowedUserLevels = ['user','mod','host']
+			allowedUserLevels = ['user','mod','cohost','host']
 		else if user.moderator
 			allowedUserLevels = ['user','mod']
 		else
