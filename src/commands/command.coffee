@@ -35,7 +35,7 @@ class Command
 		return
 
 	hasPrivelege: ->
-		console.log(@rankPrivelage)
+        console.log(@rankPrivelage)
         console.log(user.permission)
         user = data.users[@msgData.fromID].getUser()
 		switch @rankPrivelege
