@@ -17,6 +17,6 @@ class RoomHelper
 			else if vote == -1
 				votes['meh']++
 				console.log("meh")
-                console.log(user)
+				console.log(user)
 		votes['positiveRatio'] = (votes['woot'] / (votes['woot']+votes['meh'])).toFixed(2)
 		votes
