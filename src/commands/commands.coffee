@@ -1,6 +1,6 @@
 class commandsCommand extends Command
 	init: ->
-		@command='/commands'
+		@command='!commands'
 		@parseType='exact'
 		@rankPrivelege='user'
 

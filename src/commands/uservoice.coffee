@@ -1,6 +1,6 @@
 class uservoiceCommand extends Command
 	init: ->
-		@command=['/uservoice','/idea']
+		@command=['!uservoice','!idea']
 		@parseType='exact'
 		@rankPrivelege='user'
 
