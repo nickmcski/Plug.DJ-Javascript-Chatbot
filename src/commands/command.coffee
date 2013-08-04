@@ -37,6 +37,8 @@ class Command
 	hasPrivelege: ->
 		user = data.users[@msgData.fromID].getUser()
 		switch @rankPrivelege
+            alert(@rankPrivelage)
+            alert(user.permission)
 			when 'host'    then return user.permission is 5
 			when 'cohost'  then return user.permission >=4
 			when 'mod'     then return user.permission >=3
