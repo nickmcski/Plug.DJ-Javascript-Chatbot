@@ -35,11 +35,11 @@ class Command
 		return
 
 	hasPrivelege: ->
-        console.log(@rankPrivelage)
-        console.log(user.permission)
-        user = data.users[@msgData.fromID].getUser()
+		console.log(@rankPrivelage)
+		console.log(user.permission)
+		user = data.users[@msgData.fromID].getUser()
 		switch @rankPrivelege
-            
+        
 			when 'host'    then return user.permission is 5
 			when 'cohost'  then return user.permission >=4
 			when 'mod'     then return user.permission >=3
